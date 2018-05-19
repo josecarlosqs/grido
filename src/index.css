@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #FAFAFA;
+}
+
+h1{
+  font-family: 'Advent Pro', sans-serif;
+}
+
+h2, p, span{
+  font-family: 'Tajawal', sans-serif;
+}
+
+.wrapper{
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 16px auto 0 auto;
+  padding: 16px 8px;
+}
+
+.block{
+  display: block;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.group{
+  display: block;
+}
+
+.group label{
+  display: inline-block;
+  width: 96px;
+}
+
+.group label input[type=radio]{
+  display: none;
+}
+
+.group label span{
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: center;
+  transition: background-color 0.2s;
+  font-size: 16px;
+}
+.group label input[type=radio] + span{
+  background-color: #E3F2FD;
+}
+
+.group label input[type=radio]:checked + span{
+  background-color: #BBDEFB;
+  text-decoration: underline;
+}
+
+form{
+  display: inline-block;
+  width: 48.4%;
+  margin-right: 1.6%;
+  vertical-align: top;
+}
+div#preview{
+  display: inline-block;
+  width: 48.8%;
+  position: relative;
+  vertical-align: top;
+  padding:  24px 0.6% 0 0.6%;
+  background-color: #fff;
+  
+}
+div#preview::before{
+  display: block;
+  padding: 8px;
+  content: "PREVIEW";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  background-color: #EEEEEE;
+  color: #9E9E9E;
+}
